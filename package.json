@@ -1,0 +1,23 @@
+{
+  "name": "roman2int",
+  "version": "1.0.0",
+  "description": "Package to convert roman numerals to arabic number",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mc-ireiser/roman2int"
+  },
+  "keywords": [
+    "roman",
+    "arabic",
+    "numbers"
+  ],
+  "author": "Jesus Rodriguez",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^25.2.0"
+  }
+}

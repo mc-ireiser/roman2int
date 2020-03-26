@@ -1,6 +1,6 @@
-const roman2int = require('../index');
+const roman2int = require('../index.min.js');
 
-const tests = [{
+const numbers = [{
         arabic: 1,
         romann: "I"
     },
@@ -41,6 +41,54 @@ const tests = [{
         romann: "XCIX"
     },
     {
+        arabic: 1798,
+        romann: "MDCCXCVIII"
+    },
+    {
+        arabic: 1952,
+        romann: "MCMLII"
+    },
+    {
+        arabic: 2883,
+        romann: "MMDCCCLXXXIII"
+    },
+    {
+        arabic: 1882,
+        romann: "MDCCCLXXXII"
+    },
+    {
+        arabic: 2863,
+        romann: "MMDCCCLXIII"
+    },
+    {
+        arabic: 3561,
+        romann: "MMMDLXI"
+    },
+    {
+        arabic: 3868,
+        romann: "MMMDCCCLXVIII"
+    },
+    {
+        arabic: 2869,
+        romann: "MMDCCCLXIX"
+    },
+    {
+        arabic: 1866,
+        romann: "MDCCCLXVI"
+    },
+    {
+        arabic: 2639,
+        romann: "MMDCXXXIX"
+    },
+    {
+        arabic: 3167,
+        romann: "MMMCLXVII"
+    },
+    {
+        arabic: 3747,
+        romann: "MMMDCCXLVII"
+    },
+    {
         arabic: 3999,
         romann: "MMMCMXCIX"
     },
@@ -48,13 +96,13 @@ const tests = [{
 
 test('roman2int() Converts roman numerals to arabic number', () => {
 
-    tests.forEach(test => {
-        expect(roman2int(test.romann)).toBe(test.arabic);
-
+    numbers.forEach(number => {
+        expect(roman2int(number.romann)).toBe(number.arabic);
     })
 
     expect(roman2int(0)).toBe("string is required")
     expect(roman2int('')).toBe("Invalid or unsupported roman numeral")
+    expect(roman2int('0')).toBe("Invalid or unsupported roman numeral")
     expect(roman2int('#')).toBe("Invalid or unsupported roman numeral")
     expect(roman2int('i')).toBe("Invalid or unsupported roman numeral")
     expect(roman2int('v')).toBe("Invalid or unsupported roman numeral")

@@ -1,4 +1,4 @@
-const roman2int = require('../index.min.js');
+const roman2int = require('../index_min.js');
 
 const numbers = [{
         arabic: 1,

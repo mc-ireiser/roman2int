@@ -1,4 +1,4 @@
-const roman2int = require('../roman2int');
+const roman2int = require('../index');
 
 const tests = [{
         arabic: 1,

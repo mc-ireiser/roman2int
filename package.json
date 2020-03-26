@@ -1,8 +1,8 @@
 {
   "name": "roman2int",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Package to convert roman numerals to arabic number",
-  "main": "roman2int.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },

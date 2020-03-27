@@ -1,10 +1,10 @@
 {
   "name": "roman2int",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Package to convert roman numerals to arabic number",
-  "main": "index_min.js",
+  "main": "index.min.js",
   "scripts": {
-    "test": "terser index.js -o index_min.js -c -m && jest"
+    "test": "terser index.js -o index.min.js -c -m && jest"
   },
   "repository": {
     "type": "git",

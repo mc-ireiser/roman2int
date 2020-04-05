@@ -42,6 +42,16 @@ const roman2int = require('roman2int');
 const number = roman2int("MMXX"); // 2020
 ```
 
+##### Usage example
+
+See the [example.js](usage/example.js) file in the `usage` folder
+
+```bash
+npm run usage
+
+# node usage/example.js
+```
+
 **Live on [Runkit roman2int](https://npm.runkit.com/roman2int) and [Runkit roman2int example](https://runkit.com/ireiser/runkit-npm-roman2int)**
 
 ## Running the tests

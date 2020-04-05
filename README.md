@@ -52,7 +52,7 @@ npm run usage
 # node usage/example.js
 ```
 
-**Live on [Runkit roman2int](https://npm.runkit.com/roman2int) and [Runkit roman2int example](https://runkit.com/ireiser/runkit-npm-roman2int)**
+**Live on [Runkit roman2int](https://npm.runkit.com/roman2int) and [Runkit roman2int example](https://runkit.com/ireiser/roman2int)**
 
 ## Running the tests
 

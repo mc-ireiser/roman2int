@@ -1,10 +1,16 @@
 {
   "name": "roman2int",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Package to convert roman numerals to arabic number",
-  "main": "index.min.js",
+  "main": "dist/index.min.js",
   "scripts": {
-    "test": "terser index.js -o index.min.js -c -m && jest"
+    "lint": "npx eslint src/index.js",
+    "format": "npx prettier --write src/index.js",
+    "test": "jest test/roman2int.test.js",
+    "build": "npx babel src --out-dir lib",
+    "minify": "terser lib/index.js -o dist/index.min.js -c -m",
+    "test-minify": "jest test/min.test.js",
+    "start": "npm-run-all lint format build test minify"
   },
   "repository": {
     "type": "git",
@@ -19,7 +25,18 @@
   "author": "Jesus Rodriguez",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
     "jest": "^25.2.0",
-    "terser": "^4.6.7"
-  }
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.2",
+    "terser": "^4.6.7",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
 }

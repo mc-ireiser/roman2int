@@ -92,27 +92,27 @@ const numbers = [{
         arabic: 3999,
         romann: "MMMCMXCIX"
     },
-]
+];
 
 test('roman2int() Converts roman numerals to arabic number', () => {
 
     numbers.forEach(number => {
         expect(roman2int(number.romann)).toBe(number.arabic);
-    })
+    });
 
-    expect(roman2int(0)).toBe("string is required")
-    expect(roman2int('')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('0')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('#')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('i')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('v')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('x')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('c')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('d')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('m')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('IC')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('ID')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('IM')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('XD')).toBe("Invalid or unsupported roman numeral")
-    expect(roman2int('XM')).toBe("Invalid or unsupported roman numeral")
+    expect(roman2int(0)).toBe("String is required");
+    expect(roman2int('')).toBe("String is required");
+    expect(roman2int('0')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('#')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('i')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('v')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('x')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('c')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('d')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('m')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('IC')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('ID')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('IM')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('XD')).toBe("Invalid or unsupported roman numeral");
+    expect(roman2int('XM')).toBe("Invalid or unsupported roman numeral");
 });

@@ -10,7 +10,8 @@
     "build": "npx babel src --out-dir lib",
     "minify": "terser lib/index.js -o dist/index.min.js -c -m",
     "test-minify": "jest test/min.test.js",
-    "start": "npm-run-all lint format build test minify"
+    "start": "npm-run-all lint format build test minify",
+    "usage": "node usage/example.js"
   },
   "repository": {
     "type": "git",

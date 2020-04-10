@@ -1,4 +1,4 @@
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) ![npm](https://img.shields.io/npm/v/roman2int) ![Node.js CI](https://github.com/mc-ireiser/roman2int/workflows/Node.js%20CI/badge.svg?branch=master)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) ![npm](https://img.shields.io/npm/v/roman2int) ![Node.js CI](https://github.com/mc-ireiser/roman2int/workflows/Node.js%20CI/badge.svg?branch=master) ![npm](https://img.shields.io/npm/dt/roman2int)
 
 # roman2int
 

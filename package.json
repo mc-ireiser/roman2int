@@ -22,7 +22,7 @@
     "lint": "npx eslint src/index.js",
     "minify": "terser lib/index.js -o dist/index.min.js -c -m",
     "start": "npm-run-all lint format build format-lib test minify",
-    "test": "jest test/roman2int.test.js",
+    "test": "jest test/roman2int.test.js --coverage",
     "test-minify": "jest test/min.test.js",
     "usage": "node usage/example.js"
   },

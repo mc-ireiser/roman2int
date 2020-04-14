@@ -1,30 +1,31 @@
 {
   "name": "roman2int",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Package to convert roman numerals to arabic number",
-  "main": "dist/index.min.js",
-  "scripts": {
-    "lint": "npx eslint src/index.js",
-    "format": "npx prettier --write src/index.js",
-    "test": "jest test/roman2int.test.js",
-    "build": "npx babel src --out-dir lib",
-    "minify": "terser lib/index.js -o dist/index.min.js -c -m",
-    "test-minify": "jest test/min.test.js",
-    "start": "npm-run-all lint format build test minify",
-    "usage": "node usage/example.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mc-ireiser/roman2int"
-  },
   "keywords": [
     "roman",
     "arabic",
     "numbers",
     "converter"
   ],
-  "author": "Jesus Rodriguez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mc-ireiser/roman2int"
+  },
   "license": "MIT",
+  "author": "Jesus Rodriguez",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "build": "npx babel src --out-dir lib",
+    "format": "npx prettier --write src/index.js && npx sort-package-json",
+    "lint": "npx eslint src/index.js",
+    "minify": "terser lib/index.js -o dist/index.min.js -c -m",
+    "start": "npm-run-all lint format build test minify",
+    "test": "jest test/roman2int.test.js",
+    "test-minify": "jest test/min.test.js",
+    "usage": "node usage/example.js"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
@@ -36,8 +37,8 @@
     "jest": "^25.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.2",
+    "sort-package-json": "^1.41.0",
     "terser": "^4.6.7",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {}
+  }
 }

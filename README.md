@@ -1,4 +1,4 @@
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) ![npm](https://img.shields.io/npm/v/roman2int) ![Node.js CI](https://github.com/mc-ireiser/roman2int/workflows/Node.js%20CI/badge.svg?branch=master) ![npm](https://img.shields.io/npm/dt/roman2int)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) ![GitHub repo size](https://img.shields.io/github/repo-size/mc-ireiser/roman2int) ![npm](https://img.shields.io/npm/v/roman2int) ![Node.js CI](https://github.com/mc-ireiser/roman2int/workflows/Node.js%20CI/badge.svg?branch=master) ![David](https://img.shields.io/david/mc-ireiser/roman2int) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/roman2int) ![Codacy grade](https://img.shields.io/codacy/grade/7def8da1f1e44942b2b6ac4718f4e4a0) ![npm](https://img.shields.io/npm/dt/roman2int) 
 
 # roman2int
 
@@ -6,23 +6,23 @@ Convert roman numerals to arabic number.
 
 Romans Numerals are based on the following symbols.
 
-```
+```javascript
 {
-    I: 1
-    V: 5
-    X: 10
-    L: 50
-    C: 100
-    D: 500
-    M: 1000
+  I: 1;
+  V: 5;
+  X: 10;
+  L: 50;
+  C: 100;
+  D: 500;
+  M: 1000;
 }
 ```
 
-#### Roman Numerals rules
+## Roman Numerals rules
 
-- When a symbol appears after a larger (or equal) symbol it is added.
-- But if the symbol appears before a larger symbol it is subtracted.
-- Don't use the same symbol more than three times in a row.
+  - When a symbol appears after a larger (or equal) symbol it is added.
+  - But if the symbol appears before a larger symbol it is subtracted.
+  - Don't use the same symbol more than three times in a row.
 
 **NOTE:** The bars are not compatible, so the maximum supported Roman number is MMMCMXCIX, which is equal to 3999.
 
@@ -36,13 +36,13 @@ npm i roman2int
 
 ## Usage
 
-```bash
+```javascript
 const roman2int = require('roman2int');
 
 const number = roman2int("MMXX"); // 2020
 ```
 
-##### Usage example
+### Usage example
 
 See the [example.js](usage/example.js) file in the `usage` folder
 

@@ -20,9 +20,9 @@ Romans Numerals are based on the following symbols.
 
 ## Roman Numerals rules
 
-  - When a symbol appears after a larger (or equal) symbol it is added.
-  - But if the symbol appears before a larger symbol it is subtracted.
-  - Don't use the same symbol more than three times in a row.
+When a symbol appears after a larger (or equal) symbol it is added.
+But if the symbol appears before a larger symbol it is subtracted.
+Don't use the same symbol more than three times in a row.
 
 **NOTE:** The bars are not compatible, so the maximum supported Roman number is MMMCMXCIX, which is equal to 3999.
 

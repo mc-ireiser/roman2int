@@ -16,6 +16,10 @@ const romeNums = {
   M: 1000,
 };
 
+/**
+ * Receive a string with the Roman numeral for processing.
+ * @param  {string} value - Roman numeral.
+ */
 function roman2int(value) {
   if (!value || typeof value !== 'string') {
     return 'String is required';
@@ -27,6 +31,10 @@ function roman2int(value) {
   return response(isValidRomanNum, value);
 }
 
+/**
+ * @param  {boolean} isValidRomanNum - Valid roman numeral.
+ * @param  {string} value - Roman numeral.
+ */
 function response(isValidRomanNum, value) {
   const romeNum = value.trim();
 
@@ -37,6 +45,9 @@ function response(isValidRomanNum, value) {
   }
 }
 
+/**
+ * @param  {string} romeNum - Roman numeral.
+ */
 function calculateInteger(romeNum) {
   let result = null;
 

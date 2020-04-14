@@ -18,9 +18,10 @@
   "scripts": {
     "build": "npx babel src --out-dir lib",
     "format": "npx prettier --write src/index.js && npx sort-package-json",
+    "format-lib": "npx prettier --write lib/index.js",
     "lint": "npx eslint src/index.js",
     "minify": "terser lib/index.js -o dist/index.min.js -c -m",
-    "start": "npm-run-all lint format build test minify",
+    "start": "npm-run-all lint format build format-lib test minify",
     "test": "jest test/roman2int.test.js",
     "test-minify": "jest test/min.test.js",
     "usage": "node usage/example.js"

@@ -1,6 +1,6 @@
 {
   "name": "roman2int",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Package to convert roman numerals to arabic number",
   "keywords": [
     "roman",
@@ -8,6 +8,7 @@
     "numbers",
     "converter"
   ],
+  "homepage": "https://ireiser.com.ve/roman2int/",
   "repository": {
     "type": "git",
     "url": "https://github.com/mc-ireiser/roman2int"

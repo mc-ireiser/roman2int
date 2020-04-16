@@ -8,7 +8,7 @@
     "numbers",
     "converter"
   ],
-  "homepage": "https://ireiser.me/roman2int",
+  "homepage": "www.github.ireiser.me/roman2int",
   "repository": {
     "type": "git",
     "url": "https://github.com/mc-ireiser/roman2int"

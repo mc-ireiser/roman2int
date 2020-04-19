@@ -1,14 +1,17 @@
 {
   "name": "roman2int",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Package to convert roman numerals to arabic number",
   "keywords": [
     "roman",
+    "int",
     "arabic",
     "numbers",
+    "numerals",
     "converter"
   ],
-  "homepage": "www.github.ireiser.me/roman2int",
+  "homepage": "github.ireiser.me/roman2int",
+  "bugs": "github.com/mc-ireiser/roman2int/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/mc-ireiser/roman2int"
@@ -39,7 +42,7 @@
     "jest": "^25.3.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "sort-package-json": "^1.41.0",
+    "sort-package-json": "^1.42.0",
     "terser": "^4.6.11",
     "typescript": "^3.8.3"
   }

@@ -1,4 +1,4 @@
-const roman2int = require('../dist/index.min');
+const roman2int = require('../lib/index.js');
 
 const romanNumbers = [
   '',
@@ -6,6 +6,7 @@ const romanNumbers = [
   'MDCCXCVIII',
   'MCMLII',
   'MMDCCCLXXXIII',
+
   'MDCCCLXXXII',
   'MMDCCCLXIII',
   'XD',

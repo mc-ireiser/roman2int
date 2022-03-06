@@ -1,0 +1,27 @@
+{
+  "name": "roman2int",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Convert roman numerals to arabic number",
+  "license": "MIT",
+  "author": "Jesus Rodriguez",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  },
+  "homepage": "github.ireiser.me/roman2int",
+  "bugs": "github.com/mc-ireiser/roman2int/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mc-ireiser/roman2int.git"
+  }
+}

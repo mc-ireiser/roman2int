@@ -23,5 +23,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mc-ireiser/roman2int.git"
-  }
+  },
+  "keywords": [
+    "roman",
+    "arabic",
+    "int",
+    "numbers",
+    "numerals",
+    "converter"
+  ]
 }

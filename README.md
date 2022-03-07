@@ -49,20 +49,9 @@ console.log(convertResult.success, convertResult.value); // true, 2022
 
 **Module use**
 
-Set type to module on package.json
-
-```text
-// package.json
-{
-  ...
-  "type": "module",
-  ...
-}
-```
-
 ```javascript
 // main.js
-import roman2int from "roman2int";
+import roman2int from "roman2int/roman2int.es.js";
 
 const convertResult = roman2int("MMXXII");
 

@@ -36,13 +36,37 @@ npm i roman2int
 
 ## Usage
 
-**default use**
+**Default use**
 
 ```javascript
-// default use
+// main.js
 const roman2int = require('roman2int');
 
-const number = roman2int("MMXX").value; // 2020
+const number = roman2int("MMXXII").value;
+
+console.log(number); // 2022
+```
+
+**Module use**
+
+Set type to module on package.json
+
+```text
+// package.json
+{
+  ...
+  "type": "module",
+  ...
+}
+```
+
+```javascript
+// main.js
+import roman2int from "roman2int";
+
+const number = roman2int("MMXXII").value;
+
+console.log(number); // 2022
 ```
 
 ### Usage example
@@ -52,10 +76,6 @@ const number = roman2int("MMXX").value; // 2020
 ## Running the tests
 
 ```bash
-mkdir test-roman2int-folder
-
-cd test-roman2int-folder
-
 git clone https://github.com/mc-ireiser/roman2int.git
 
 cd roman2int

@@ -1,6 +1,6 @@
 {
   "name": "roman2int",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Convert roman numerals to arabic number",
   "main": "dist/roman2int.umd.js",
   "module": "dist/roman2int.es.js",

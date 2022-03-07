@@ -42,9 +42,9 @@ npm i roman2int
 // main.js
 const roman2int = require('roman2int');
 
-const number = roman2int("MMXXII").value;
+const convertResult = roman2int("MMXXII");
 
-console.log(number); // 2022
+console.log(convertResult.success, convertResult.value); // true, 2022
 ```
 
 **Module use**
@@ -64,9 +64,26 @@ Set type to module on package.json
 // main.js
 import roman2int from "roman2int";
 
-const number = roman2int("MMXXII").value;
+const convertResult = roman2int("MMXXII");
 
-console.log(number); // 2022
+console.log(convertResult.success, convertResult.value); // true, 2022
+```
+
+***On error***
+
+```javascript
+const roman2int = require('roman2int');
+
+const convertResult = roman2int("XXXXX");
+
+console.dir(convertResult);
+
+// convertResult
+{
+  value: null,
+  success: false,
+  message: 'Invalid or unsupported roman numeral'
+}
 ```
 
 ### Usage example

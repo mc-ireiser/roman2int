@@ -42,40 +42,10 @@ npm i roman2int
 // default use
 const roman2int = require('roman2int');
 
-const number = roman2int("MMXX"); // 2020
-```
-
-**To activate IntelliSense in VSCode** (Tested on `v-1.44.2`)
-
-```javascript
-// for VScode IntelliSense
-const roman2int = require("roman2int/lib/index");
-
-const number = roman2int("MMXX"); // 2020
-```
-
-![IntelliSense](./docs/img/IntelliSense%20.png "roman2int IntelliSense VSCode")
-
-> IntelliSense is a general term for a variety of code editing features including: code completion, parameter info, quick info, and member lists. IntelliSense features are sometimes called by other names such as "code completion", "content assist", and "code hinting." [visualstudio docs](https://code.visualstudio.com/docs/editor/intellisense).
-
-**To use the minified version**
-
-```javascript
-// for minified version
-const roman2int = require("roman2int/dist/index.min");
-
-const number = roman2int("MMXX"); // 2020
+const number = roman2int("MMXX").value; // 2020
 ```
 
 ### Usage example
-
-See the [example.js](usage/example.js) file in the `usage` folder
-
-```bash
-npm run usage
-
-# node usage/example.js
-```
 
 **Live on [Runkit roman2int](https://npm.runkit.com/roman2int) and [Runkit roman2int example](https://runkit.com/ireiser/roman2int)**
 

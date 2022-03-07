@@ -1,10 +1,10 @@
 {
   "name": "roman2int",
-  "private": true,
   "version": "2.0.0",
   "description": "Convert roman numerals to arabic number",
   "license": "MIT",
   "author": "Jesus Rodriguez",
+  "private": false,
   "files": [
     "dist/*"
   ],

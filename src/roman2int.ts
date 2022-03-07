@@ -22,12 +22,11 @@ let romeNums: { [index: string]: number } = {
  * @param {string} romanNumeral - Roman number to convert
  */
 function roman2int(romanNumeral: string) {
-  const romanNumeralString = romanNumeral.trim();
-
-  if (!romanNumeralString) {
+  if (!romanNumeral) {
     return responseObject(null, false, "Roman numeral string is required");
   }
 
+  const romanNumeralString = romanNumeral.trim().toUpperCase();
   const isValidRomanNumeralString = regex.test(romanNumeralString);
 
   if (isValidRomanNumeralString) {

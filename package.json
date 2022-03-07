@@ -1,9 +1,9 @@
 {
   "name": "roman2int",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Convert roman numerals to arabic number",
-  "main": "roman2int.umd.js",
-  "module": "roman2int.es.js",
+  "main": "dist/roman2int.umd.js",
+  "module": "dist/roman2int.es.js",
   "license": "MIT",
   "author": "Jesus Rodriguez",
   "private": false,
